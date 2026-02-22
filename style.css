@@ -1,0 +1,13 @@
+body {
+    background-color: lightseagreen;
+}
+
+#container {
+    background-color: white;
+    margin: 50px;
+}
+
+#title {
+    text-align: center;
+    color: mintcream;
+}
