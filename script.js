@@ -19,6 +19,18 @@ function createGrid(rows, columns, parent)
     }
 }
 
+function random(number) {
+    return Math.floor(Math.random() * (number + 1));
+}
+
+function increaseOpacity(target) {
+    let opacity = Number(target.style.opacity);
+    if (opacity < 1) {
+	let newOpacity = opacity + 0.1;
+	target.style.opacity = `${newOpacity}`;
+    }
+}
+
 let container = document.getElementById('container');
 let rowInput = document.getElementById('row-input');
 let columnInput = document.getElementById('column-input');
