@@ -18,6 +18,14 @@ body {
     overflow: auto;
 }
 
+#reset {
+    background: pink;
+    color: black;
+    align-self: flex-end;
+    height: 30px;
+    width: 70px;
+}
+
 #title {
     text-align: center;
     color: mintcream;
