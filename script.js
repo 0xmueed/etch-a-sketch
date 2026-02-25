@@ -39,8 +39,15 @@ let goButton = document.getElementById('go-button');
 // Change background color of target element when mouse hovers over container:
 container.addEventListener('mouseover', (e) => {
     let target = e.target;
-    if (target.className == "row")
-	target.style.backgroundColor = "lightyellow";
+    if (target.className == "row") {
+	rndColor = `rgb(${random(255)} ${random(255)} ${random(255)})`;
+	target.style.opacity = "10%";
+	target.style.backgroundColor = rndColor;
+	target.className = "row modified";
+    }
+    else if (target.className == "row modified") {
+	increaseOpacity(target);
+    }
 });
 
 
