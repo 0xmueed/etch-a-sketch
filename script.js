@@ -35,6 +35,9 @@ let container = document.getElementById('container');
 let rowInput = document.getElementById('row-input');
 let columnInput = document.getElementById('column-input');
 let goButton = document.getElementById('go-button');
+let reset = document.getElementById('reset');
+createGrid(10, 50, container);    // Default grid (when page refreshes)
+
 
 // Change background color of target element when mouse hovers over container:
 container.addEventListener('mouseover', (e) => {
@@ -51,13 +54,18 @@ container.addEventListener('mouseover', (e) => {
 });
 
 
-// Default grid (when page refreshes):
-createGrid(10, 50, container);
-
-// Custom grid (set by user):
+// Custom grid (set by user)
 let rowNum, columnNum;
 goButton.addEventListener('click', () => {
     rowNum = Math.abs(rowInput.value);
     columnNum = Math.abs(columnInput.value);
     createGrid(rowNum, columnNum, container);
+});
+
+// Erase grid content
+reset.addEventListener('click', () => {
+    if (rowNum && columnNum)
+	createGrid(rowNum, columnNum, container);
+    else
+	createGrid(10, 50, container);
 });
