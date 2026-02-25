@@ -1,5 +1,14 @@
 body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     background-color: lightseagreen;
+}
+
+#input {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
 }
 
 #container {
