@@ -18,3 +18,6 @@ git clone https://github.com/0xmueed/etch-a-sketch.git
 cd etch-a-sketch
 ```
 3. Open in browser: Open `index.html` in your preferred browser.
+
+# Preview
+You can view the live demo of this project at [Github Pages](https://0xmueed.github.io/etch-a-sketch/).
